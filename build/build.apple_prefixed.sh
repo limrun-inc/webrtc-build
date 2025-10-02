@@ -3,7 +3,7 @@
 set -e
 
 cd `dirname $0`
-python3 run.py build apple_prefixed --commit "$1" --webrtc-fetch
+python3 run.py build apple_prefixed --commit "$1" --webrtc-gen
 
 export PATH="$PWD/_source/apple_prefixed/depot_tools:$PATH"
 mkdir -p _package/apple_prefixed
